@@ -1,5 +1,9 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import Navbar from '../Components/Navbar';
+import {callback} from 'fdir/dist/api/async';
+import ResumeCard from "../Components/ResumeCard";
+
+
 
 export function meta({}: Route.MetaArgs) {
   return [
