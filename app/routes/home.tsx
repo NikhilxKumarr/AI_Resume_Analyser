@@ -52,15 +52,17 @@ export default function Home() {
                             className="resume-card bg-white shadow-lg p-4 rounded-lg max-w-sm"
                         >
                             {/* Company name and ScoreCircle */}
-                            <div className="mb-3 flex justify-between items-center">
-                                <div className="flex flex-col">
-                                    <h2 className="text-lg font-semibold leading-tight">{resume.company}</h2>
-                                    <p className="text-sm text-gray-500">{resume.job}</p>
+                            <div className="flex justify-between items-start gap-4 mb-1">
+                                <div className="flex flex-col flex-grow min-w-0 leading-snug">
+                                    <h2 className="text-lg font-semibold break-words">{resume.company}</h2>
+                                    <p className="text-sm text-gray-500 break-words">{resume.job}</p>
                                 </div>
-                                <div className="w-12 h-12 flex-shrink-0">
+                                <div className="flex-shrink-0">
                                     <ScoreCircle score={resume.score} />
                                 </div>
                             </div>
+
+
 
                             {/* Resume Image */}
                             <img
