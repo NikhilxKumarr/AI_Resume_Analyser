@@ -23,11 +23,11 @@ export default function Home() {
         <Navbar />
 
         <section className="main-section">
-          <div className="page-heading text-center py-8">
-            <h1 className="text-3xl font-bold">
+          <div className="page-heading text-center py-4">
+            <h1 className="text-2xl font-semibold">
               Track Your Applications & Resume Ratings
             </h1>
-            <h2 className="text-lg text-gray-600">
+            <h2 className="text-sm text-gray-600">
               Review your submissions and AI-powered feedback
             </h2>
           </div>
@@ -38,24 +38,26 @@ export default function Home() {
                     key={index}
                     className="resume-card bg-white shadow-lg p-4 rounded-lg max-w-sm"
                 >
-                  <img
-                      src={resume.src}
-                      alt={`Resume ${index + 1}`}
-                      className="w-full h-[400px] object-cover object-top rounded"
-                  />
-
-                  <div className="mt-4 flex items-center justify-between">
+                  {/* Company name and ScoreCircle */}
+                  <div className="mb-1 flex items-center justify-between ">
                     <div>
-                      <h2 className="text-xl font-semibold">{resume.company}</h2>
-                      <p className="text-gray-500">{resume.job}</p>
+                      <h2 className="text-lg font-semibold">{resume.company}</h2>
+                      <p className="text-sm text-gray-500">{resume.job}</p>
                     </div>
                     <ScoreCircle score={resume.score} />
                   </div>
+
+                  {/* Resume Image */}
+                  <img
+                      src={resume.src}
+                      alt={`Resume ${index + 1}`}
+                      className="w-full h-[380px] object-cover object-top rounded"
+                  />
                 </div>
             ))}
           </div>
-
         </section>
+
       </main>
   );
 }
