@@ -15,6 +15,9 @@ export default function Home() {
     { src: "/images/resume_01.png", company: "Google", job: "Software Engineer", score: 85 },
     { src: "/images/resume_02.png", company: "Amazon", job: "Backend Developer", score: 70 },
     { src: "/images/resume_03.png", company: "Microsoft", job: "ML Engineer", score: 92 },
+    { src: "/images/resume_01.png", company: "Goldman Sachs", job: "Software Engineer", score: 78 },
+    { src: "/images/resume_02.png", company: "De Shaw", job: "Backend Developer", score: 97 },
+    { src: "/images/resume_03.png", company: "Texas Instrumentation", job: "ML Engineer", score: 91 },
   ];
 
 
@@ -22,8 +25,8 @@ export default function Home() {
       <main className="bg-[url('/images/bg-main.svg')] bg-cover min-h-screen">
         <Navbar />
 
-        <section className="main-section">
-          <div className="page-heading text-center py-4">
+        <section className="main-section pb-20">
+        <div className="page-heading text-center py-4">
             <h1 className="text-2xl font-semibold">
               Track Your Applications & Resume Ratings
             </h1>
