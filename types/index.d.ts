@@ -56,3 +56,14 @@ interface Feedback {
         }[];
     };
 }
+
+
+
+
+declare module "~/Constants" {
+    export const AIResponseFormat: string;
+    export const prepareInstructions: (params: {
+        jobTitle: string;
+        jobDescription: string;
+    }) => string;
+}
