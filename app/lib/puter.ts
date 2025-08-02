@@ -123,7 +123,7 @@ export const usePuterStore = create<PuterStore>((set, get) => {
             return false;
         }
 
-        set({ isLoading: true, error: null });
+        set({ isLoading: false, error: null });
 
         try {
             const isSignedIn = await puter.auth.isSignedIn();
