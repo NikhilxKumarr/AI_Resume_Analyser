@@ -13,6 +13,7 @@ export async function convertPdfToImage(file: File): Promise<PdfConversionResult
         };
     }
 
+
     try {
         const pdfjsLib = await import('pdfjs-dist/legacy/build/pdf');
         pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
