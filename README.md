@@ -1,4 +1,4 @@
-# AI_Resume_Analyser
+# CVISION (AI_Resume_Analyser)
 ## Features
 
 -  Server-side rendering
