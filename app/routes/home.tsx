@@ -13,14 +13,13 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-    const { auth } = usePuterStore();
-    const navigate = useNavigate();
-
-    useEffect(() => {
-        if (!auth.isAuthenticated) {
-            navigate("/auth?next=/");
-        }
-    }, [auth.isAuthenticated]);
+    // const { auth } = usePuterStore();
+    // const navigate = useNavigate();
+    // useEffect(() => {
+    //     if (!auth.isAuthenticated) {
+    //         navigate("/auth?next=/");
+    //     }
+    // }, [auth.isAuthenticated]);
 
     const resumeImages = [
         { src: "/images/resume_01.png", company: "Google", job: "Software Engineer", score: 85 },
